@@ -22,7 +22,7 @@ void dfs(int now, int sum, int idx)
             ans++;
         return;
     }
-    for (int i = idx; i <= n - k + now + 1; i++)
+    for (int i = idx; i <= n - k + now + 1; i++) // 不降原则
     {
         dfs(now + 1, sum + nums[i], i + 1);
     }
