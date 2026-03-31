@@ -55,7 +55,6 @@
         "source_location": "c"
     },
     "C_Cpp.errorSquiggles": "disabled",
-
     // 默认文件编码
     "files.encoding": "utf8",
     // 自动猜测文件编码
@@ -64,14 +63,15 @@
     "terminal.integrated.profiles.windows": {
         "Command Prompt": {
             "path": "cmd.exe",
-            "args": ["/K", "chcp 65001"] // 设置终端编码为UTF-8
+            "args": [
+                "/K",
+                "chcp 65001"
+            ] // 设置终端编码为UTF-8
         }
     },
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
     // 编辑器字体（确保支持中文显示）
     "editor.fontFamily": "LXGW WenKai Mono",
-
     "doki.background.enabled": true,
     "doki.wallpaper.enabled": true
-    
 }

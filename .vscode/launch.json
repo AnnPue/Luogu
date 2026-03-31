@@ -5,17 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "g++.exe - 生成和调试活动文件",
+            "name": "C/C++: g++.exe 生成活动文件",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",//只需要把E:\\C++改成自己代码的工作路径即可
+            "program": "${fileDirname}/main.exe", //只需要把E:\\C++改成自己代码的工作路径即可
             "args": [],
             "stopAtEntry": true,
             "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
-            "miDebuggerPath": "gdb.exe",//把E:\\mingw64换成自己的mingw64存放的路径
+            "miDebuggerPath": "gdb.exe", //把E:\\mingw64换成自己的mingw64存放的路径
             "setupCommands": [
                 {
                     "description": "为 gdb 启用整齐打印",
@@ -23,7 +23,7 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C/C++: g++ 生成活动文件",
+            "preLaunchTask": "C/C++: g++.exe 生成活动文件",
         }
     ]
 }
