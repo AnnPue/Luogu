@@ -29,12 +29,7 @@ int main()
             step = -step;
         }
         int x = tman + step;
-        if (x < 0)
-        {
-            tman = x + n; // 负数时加上n得到正确的小人编号
-            continue;
-        }
-        tman = x % n; // 大于等于0时直接取余得到正确的小人编号
+        tman = (x % n + n) % n; // 正负数统一的取模公式
     }
     std::cout << men[tman].second;
 }
