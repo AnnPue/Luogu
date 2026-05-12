@@ -4,6 +4,7 @@
 using namespace std;
 const int N = 15;
 int n, a[N], b[N];
+
 pair<int, int> exgcd(int a, int b)
 {
     if (b == 0)
@@ -11,11 +12,13 @@ pair<int, int> exgcd(int a, int b)
     auto [x, y] = exgcd(b, a % b);
     return {y, x - a / b * y};
 }
+
 int inv(int a, int p)
 {
     auto [x, y] = exgcd(a, p);
     return (x + p) % p; // exgcd 求出的解有可能是负的，所以取模一下转成正的
 }
+
 int CRT(int n, int *a, int *b)
 {
     int M = 1, x = 0;
@@ -28,6 +31,7 @@ int CRT(int n, int *a, int *b)
     }
     return x;
 }
+
 signed main()
 {
     cin.tie(nullptr)->sync_with_stdio(false);
