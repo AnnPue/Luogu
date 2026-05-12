@@ -29,7 +29,7 @@ int main()
             step = -step;
         }
         int x = tman + step;
-        tman = (x % n + n) % n; // 正负数统一的取模公式
+        tman = (x + n) % n; // 正负数统一的取模公式
     }
     std::cout << men[tman].second;
 }
